@@ -15,7 +15,7 @@ class CustomerTest {
     @BeforeEach
     void setUp() {
         customer = new Customer("Jonny", "123 Main st.", 12000, 1000);
-        vehicle = new Vehicle();
+        vehicle = new Vehicle(4000, 2001);
         employee = new Employee("Sam", "456 Main st.");
     }
 

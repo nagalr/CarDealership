@@ -5,6 +5,11 @@ public class Vehicle {
     private double price;
     private int productionYear;
 
+    public Vehicle(double price, int productionYear) {
+        this.price = price;
+        this.productionYear = productionYear;
+    }
+
     public double getPrice() {
         return price;
     }
