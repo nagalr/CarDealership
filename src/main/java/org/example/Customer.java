@@ -7,8 +7,6 @@ public class Customer {
     private double cashOnHand;
     private double loanAmount;
 
-    public Customer() {
-    }
 
     public Customer(String name, String address, double cashOnHand, double loanAmount) {
         this.name = name;
