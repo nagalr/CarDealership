@@ -10,16 +10,22 @@ public class Employee {
         this.address = address;
     }
 
-    public void handleCustomer(Customer customer, boolean finance, Vehicle vehicle) {
+    public String handleCustomer(Customer customer, boolean finance, Vehicle vehicle) {
         if (finance) {
             creditHistory(customer, customer.getLoanAmount());
         } else if (vehicle.getPrice() < customer.getCashOnHand()) {
             processTransaction(customer, vehicle);
         } else System.out.println("Dear customer, please bring more Money!");
+
+        String s = "finish handling a customer";
+        System.out.println(s);
+        return s;
     }
 
-    private void creditHistory(Customer customer, double loanAmaount) {
-        System.out.println("Checking Credit History...");
+    private String creditHistory(Customer customer, double loanAmaount) {
+        String s = "Checking Credit History...";
+        System.out.println(s);
+        return s;
     }
 
     private void processTransaction(Customer customer, Vehicle vehicle) {
