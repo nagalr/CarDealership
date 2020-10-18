@@ -52,3 +52,6 @@ public class Customer {
         this.loanAmount = loanAmount;
     }
 }
+
+
+
