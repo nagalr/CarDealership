@@ -26,3 +26,4 @@ public class Vehicle {
         this.productionYear = productionYear;
     }
 }
+
